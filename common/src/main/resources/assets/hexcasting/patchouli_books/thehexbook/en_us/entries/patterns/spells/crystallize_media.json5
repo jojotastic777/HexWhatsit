@@ -1,0 +1,32 @@
+{
+  name: "hexwhatsit.book.patterns.great_spells.crystallize_media",
+  category: "hexcasting:patterns/great_spells",
+  icon: "minecraft:amethyst_shard",
+  advancement: "hexcasting:root",
+  pages: [
+    {
+      type: "hexcasting:pattern",
+      op_id: "hexwhatsit:lesser_crystallize_media",
+      anchor: "hexwhatsit:lesser_crystallize_media",
+      input: "vector, number",
+      output: "",
+      text: "hexwhatsit.book.patterns.great_spells.crystallize_media.lesser_crystallize_media",
+    },
+    {
+      type: "hexcasting:pattern",
+      op_id: "hexwhatsit:crystallize_media",
+      anchor: "hexwhatsit:crystallize_media",
+      input: "vector, number",
+      output: "",
+      text: "hexwhatsit.book.patterns.great_spells.crystallize_media.crystallize_media",
+    },
+    {
+      type: "hexcasting:pattern",
+      op_id: "hexwhatsit:greater_crystallize_media",
+      anchor: "hexwhatsit:greater_crystallize_media",
+      input: "vector, number",
+      output: "",
+      text: "hexwhatsit.book.patterns.great_spells.crystallize_media.greater_crystallize_media",
+    }
+  ],
+}

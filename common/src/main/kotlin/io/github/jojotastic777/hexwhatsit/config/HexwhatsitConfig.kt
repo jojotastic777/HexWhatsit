@@ -63,23 +63,23 @@ object HexwhatsitConfig {
 
     @Config(name = "client")
     class ClientConfig : ConfigData {
-        @Tooltip
-        val clientConfigOption: Boolean = true
+//        @Tooltip
+//        val clientConfigOption: Boolean = true
     }
 
     @Config(name = "server")
     class ServerConfig : ConfigData {
-        @Tooltip
-        var serverConfigOption: Int = 64
-            private set
+//        @Tooltip
+//        var serverConfigOption: Int = 64
+//            private set
 
         fun encode(buf: FriendlyByteBuf) {
-            buf.writeInt(serverConfigOption)
+//            buf.writeInt(serverConfigOption)
         }
 
         companion object {
             fun decode(buf: FriendlyByteBuf) = ServerConfig().apply {
-                serverConfigOption = buf.readInt()
+//                serverConfigOption = buf.readInt()
             }
         }
     }

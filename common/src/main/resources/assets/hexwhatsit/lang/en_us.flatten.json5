@@ -2,12 +2,14 @@
   hexwhatsit: {
     book: {
       patterns: {
-        spells: {
-          dummy_spells: {
-            "": "Dummy Spells",
-            congratulate: "Remove an entity from the stack, then congratulate them.",
-          },
-        },
+        great_spells: {
+          crystallize_media: {
+            "": "Media Crystallization",
+            lesser_crystallize_media: "Remove a position and a number from the stack, then conjure that number of amethyst dust at the position, at a 5%% loss.",
+            crystallize_media: "Remove a position and a number from the stack, then conjure that number of amethyst shards at the position, at a 10%% loss.",
+            greater_crystallize_media: "Remove a position and a number from the stack, then conjure that number of charged amethyst at the position, at a 15%% loss."
+          }
+        }
       },
     },
   },
@@ -15,22 +17,22 @@
   hexcasting: {
     action: {
       "hexwhatsit:": {
-        congratulate: "Congratulate Player",
+        lesser_crystallize_media: "Lesser Crystallize Media",
+        crystallize_media: "Crystallize Media",
+        greater_crystallize_media: "Greater Crystallize Media"
       },
 
-      // use this to add shortened versions of pattern names if the full name won't fit in the ingame book
-      // you don't need to add an entry for every pattern - the above value will be used as a default
+      // Pattern name abbreviations:
       book: {
         "hexwhatsit:": {
-          congratulate: "Congratulate",
+          lesser_crystallize_media: "Less. Crystallize Media",
+          greater_crystallize_media: "Great. Crystallize Media"
         },
       },
     },
   },
 
-  text: {
-    hexwhatsit: {
-      congrats: "Tell %1$s they're doing a good job!",
-    },
-  },
+//  text: {
+//    hexwhatsit: {},
+//  },
 }
