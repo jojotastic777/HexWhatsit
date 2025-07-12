@@ -14,25 +14,13 @@ object HexwhatsitActions : HexwhatsitRegistrar<ActionRegistryEntry>(
     HexRegistries.ACTION,
     { HexActions.REGISTRY },
 ) {
-    val LESSER_CRYSTALLIZE_MEDIA = make(
-        "lesser_crystallize_media",
-        HexDir.EAST,
-        "wawaadda"
-    ) {
+    val LESSER_CRYSTALLIZE_MEDIA = make("lesser_crystallize_media", HexDir.EAST, "wawaadda") {
         OpCrystallizeMedia(HexItems.AMETHYST_DUST)
     }
-    val CRYSTALLIZE_MEDIA = make(
-        "crystallize_media",
-        HexDir.EAST,
-        "wawaaddaedwwwdwwwddadadaadada"
-    ) {
+    val CRYSTALLIZE_MEDIA = make("crystallize_media", HexDir.EAST, "wawaaddaedwwwdwwwddadadaadada") {
         OpCrystallizeMedia(Items.AMETHYST_SHARD)
     }
-    val GREATER_CRYSTALLIZE_MEDIA = make(
-        "greater_crystallize_media",
-        HexDir.EAST,
-        "wawaaddaedwwwdwwwwdwwwwddadadadaadadadaadada"
-    ) {
+    val GREATER_CRYSTALLIZE_MEDIA = make("greater_crystallize_media", HexDir.EAST, "wawaaddaedwwwdwwwwdwwwwddadadadaadadadaadada") {
         OpCrystallizeMedia(HexItems.CHARGED_AMETHYST)
     }
 
