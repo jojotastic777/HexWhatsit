@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "hexwhatsit:lesser_crystallize_media",
+    "hexwhatsit:crystallize_media",
+    "hexwhatsit:greater_crystallize_media"
+  ]
+}
