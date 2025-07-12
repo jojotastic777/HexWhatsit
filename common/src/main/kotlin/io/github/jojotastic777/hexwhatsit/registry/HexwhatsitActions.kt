@@ -17,21 +17,25 @@ object HexwhatsitActions : HexwhatsitRegistrar<ActionRegistryEntry>(
     val LESSER_CRYSTALLIZE_MEDIA = make(
         "lesser_crystallize_media",
         HexDir.EAST,
-        "wawaadda",
+        "wawaadda"
+    ) {
         OpCrystallizeMedia(HexItems.AMETHYST_DUST)
-    )
+    }
     val CRYSTALLIZE_MEDIA = make(
         "crystallize_media",
         HexDir.EAST,
-        "wawaaddaedwwwdwwwddadadaadada",
+        "wawaaddaedwwwdwwwddadadaadada"
+    ) {
         OpCrystallizeMedia(Items.AMETHYST_SHARD)
-    )
+    }
     val GREATER_CRYSTALLIZE_MEDIA = make(
         "greater_crystallize_media",
         HexDir.EAST,
-        "wawaaddaedwwwdwwwwdwwwwddadadadaadadadaadada",
+        "wawaaddaedwwwdwwwwdwwwwddadadadaadadadaadada"
+    ) {
         OpCrystallizeMedia(HexItems.CHARGED_AMETHYST)
-    )
+    }
+
 
     private fun make(name: String, startDir: HexDir, signature: String, action: Action) =
         make(name, startDir, signature) { action }
