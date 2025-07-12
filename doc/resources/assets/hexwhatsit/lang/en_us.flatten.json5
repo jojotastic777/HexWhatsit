@@ -1,0 +1,8 @@
+{
+  hexdoc: {
+    hexwhatsit: {
+      title: "HexWhatsit Book",
+      description: "HexWhatsit is an addon for Hex Casting which adds whatever miscellaneous additions that I come up with.",
+    },
+  }
+}

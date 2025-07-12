@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "hexwhatsit",
+  "version": "${version}",
+  "name": "HexWhatsit",
+  "description": "HexWhatsit is an addon for Hex Casting which adds whatever miscellaneous additions that I come up with.",
+  "authors": [
+    "jojotastic777"
+  ],
+  "contact": {
+    "homepage": "https://jojotastic777.github.io/HexWhatsit",
+    "sources": "https://github.com/jojotastic777/HexWhatsit"
+  },
+  "license": "MIT",
+  "icon": "assets/hexwhatsit/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [{
+      "adapter": "kotlin",
+      "value": "io.github.jojotastic777.hexwhatsit.fabric.FabricHexwhatsit"
+    }],
+    "client": [{
+      "adapter": "kotlin",
+      "value": "io.github.jojotastic777.hexwhatsit.fabric.FabricHexwhatsitClient"
+    }],
+    "modmenu": [{
+      "adapter": "kotlin",
+      "value": "io.github.jojotastic777.hexwhatsit.fabric.FabricHexwhatsitModMenu"
+    }]
+  },
+  "mixins": [
+    "hexwhatsit-common.mixins.json",
+    "hexwhatsit-fabric.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "${versions.minecraft}",
+    "fabricloader": ">=${versions.fabric_loader}",
+    "fabric-api": ">=${versions.fabric_api}",
+    "fabric-language-kotlin": ">=${versions.kotlin_fabric}",
+    "architectury": ">=${versions.architectury}",
+    "hexcasting": ">=${versions.hexcasting_dependency}",
+    "cloth-config": ">=${versions.clothConfig}"
+  },
+  "suggests": {
+    "modmenu": ">=${versions.modMenu}"
+  }
+}
