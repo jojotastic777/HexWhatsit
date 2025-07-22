@@ -1,0 +1,38 @@
+{
+  hexwhatsit: {
+    book: {
+      patterns: {
+        great_spells: {
+          crystallize_media: {
+            "": "媒质晶化",
+            lesser_crystallize_media: "移除栈顶的一个位置和一个数，并在该位置处构筑给定数量个紫水晶粉；转化有 5%% 损耗。",
+            crystallize_media: "移除栈顶的一个位置和一个数，并在该位置处构筑给定数量个紫水晶碎片；转化有 10%% 损耗。",
+            greater_crystallize_media: "移除栈顶的一个位置和一个数，并在该位置处构筑给定数量个充能紫水晶；转化有 15%% 损耗。"
+          }
+        }
+      },
+    },
+  },
+
+  hexcasting: {
+    action: {
+      "hexwhatsit:": {
+        lesser_crystallize_media: "初等晶化媒质",
+        crystallize_media: "晶化媒质",
+        greater_crystallize_media: "高等晶化媒质"
+      },
+
+      // Pattern name abbreviations:
+      book: {
+        "hexwhatsit:": {
+          lesser_crystallize_media: "初等晶化媒质",
+          greater_crystallize_media: "高等晶化媒质"
+        },
+      },
+    },
+  },
+
+//  text: {
+//    hexwhatsit: {},
+//  },
+}
